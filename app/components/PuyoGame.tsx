@@ -754,7 +754,7 @@ export default function PuyoGame() {
   }
 
   const level = Math.floor(state.score / 1000) + 1
-  const tickMs = Math.max(80, 500 - (level - 1) * 40)
+  const tickMs = Math.max(200, 800 - (level - 1) * 40)
 
   // Client-side initialization to avoid hydration mismatch
   useEffect(() => {
